@@ -2,6 +2,7 @@ version: "1"
 rules:                      # Array of rules
   - base: dev            # Required. Target branch
     upstream: ikasumi-test:main    # Required. Must be in the same fork network.
+    autoMerge: false
     mergeMethod: merge  # Optional, one of [none, merge, squash, rebase, hardreset], Default: none.
     mergeUnstable: false    # Optional, merge pull request even when the mergeable_state is not clean. Default: false
     assignees:              # Optional
